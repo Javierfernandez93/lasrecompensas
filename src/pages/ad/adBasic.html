@@ -1,0 +1,36 @@
+<ion-content padding>
+  <ion-grid>
+    <ion-row>
+      <ion-col text-center>
+        <h1>Ingresa la información que te pedimos</h1>
+        <h3>
+          Ubicación de tu negocio
+        </h3>
+
+        <div #map id="map"></div>
+
+        <h3>
+          Información personal
+        </h3>
+
+        <ion-list>
+		  <ion-item>
+		    <ion-label>Teléfono</ion-label>
+		    <ion-input type="tel"></ion-input>
+		  </ion-item>
+		</ion-list>
+
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-buttons end (click)="goToAdPromo()">
+      <button ion-button icon-right color="royal">
+        Siguiente <ion-icon name="arrow-dropright-circle"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>
